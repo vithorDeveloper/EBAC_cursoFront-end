@@ -7,9 +7,8 @@
 body {
   width: 70%;
   margin: 0 auto;
-background: rgba(50, 50, 5, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(50, 50, 5, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 body > header {
