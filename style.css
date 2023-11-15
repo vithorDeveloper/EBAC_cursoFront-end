@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+background: rgba(50, 50, 5, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  padding: 1rem 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Arial";
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav{
+  width: 40%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+article > a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Arial";
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+p {
+  font-family: "Arial";
+  margin-top: 0.5rem;
+}
+
+h3 {
+  margin-top: 0.5rem;
+}
+
+time{
+  font-style: italic;
+}
+
+h2{
+  font-size: 1.8rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+
+}
+
+article {
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+article img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+section#sports {
+background: rgba(32, 121, 9, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+section#sports a{
+  background: rgba(32, 121, 9);
+}
+
+section#economy{
+  background: rgba(249, 255, 5, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2)
+}
+
+section#economy a{
+  background: rgba(230, 180, 9);
+  color: black;
+}
+
+section#tecnology {
+  background: rgba(0, 45, 190, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+section#tecnology a{
+  background: rgba(0, 45, 190);
+}
+
+section#entertainment{
+  background: rgba(190, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+section#entertainment a{
+  background: rgba(190, 0, 0);
+}
+
+footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
