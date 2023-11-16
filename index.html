@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Formulario</h1>
+
+    <form>
+      <input type="number" name="num1" id="num1" placeholder="digite o primeiro número">
+      <input type="number" name="num2" id="num2" placeholder="digite o segundo número">
+
+      <button type="submit">Comparar</button>
+    </form>
+
+    <div id="msgTrue" class="hidden">
+      <span>Sucess ✅</span>
+      <p>O segundo número É maior que o primeiro numero</p>
+    </div>
+
+    <div id="msgFalse" class="hidden">
+      <span>Invalid ❌</span>
+      <p>O segundo número NÃO é maior que o primeiro numero</p>
+    </div>
+
+    <div id="semValores" class="hidden">
+      <span>Fail ⛔</span>
+      <p>Nenhum número informado ou valores iguais !</p>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
