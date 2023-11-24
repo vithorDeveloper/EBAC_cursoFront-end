@@ -1,51 +1,37 @@
-const form = document.querySelector('form')
+$(document).ready(() => {
 
-const compararNumeros = (num1, num2) => {
+    const mostrarMsg = () => {
+      if($('ol').children().length === 0){
+        $('p').removeClass('hidden')
+      }
+      else{
+        $('p').addClass('hidden')
+      }
+    }
 
-  if (num1 === null && num2 === null || num1 === num2) {
-    return "error";
-  } 
-  else if (num1 > num2) {
-    return "primeiro maior";
-  } 
-  else if (num2 > num1) {
-    return "segundo maior";
-  } 
-}
+    mostrarMsg()
+  
+  $('form').submit((e) => {
+      e.preventDefault()
 
+      const tarefa = $('input').val()
+      const lista = $('ol')
 
-form.addEventListener( 'submit', (e) => {
+      if($('input').val() === ''){
+        alert("Campo de tarefa não preenchido")
+      }
+      else{
+        $(`<li>${tarefa}</li>`).appendTo(lista)
+  
+        $('input').val('')
+      }
 
-  e.preventDefault();
+      mostrarMsg()
+    })
 
-  const primeiroNumero = document.querySelector('#num1')
-  const segundoNumero = document.querySelector('#num2')
-  const msgSucesso = document.querySelector('#msgTrue')
-  const msgError = document.querySelector('#msgFalse')
-  const semValor = document.querySelector('#semValores')
+    $('ol').on('click', 'li', (function() {
+      $(this).addClass('feito')
 
-  const resultado = compararNumeros(primeiroNumero.value, segundoNumero.value)
-
-  switch (resultado) {
-    case "segundo maior":
-        msgSucesso.classList.remove('hidden')
-        msgError.classList.add('hidden')
-        semValor.classList.add('hidden')
-    break;
-    case "primeiro maior":
-        msgError.classList.remove('hidden')
-        msgSucesso.classList.add('hidden')
-        semValor.classList.add('hidden')
-    break;
-    case "error":
-        semValor.classList.remove('hidden')
-        msgError.classList.add('hidden')
-        msgSucesso.classList.add('hidden')
-    break;
-    default:
-      break;
-  }
-
-  primeiroNumero.value = ''
-  segundoNumero.value = ''
+      alert("Muito bom, voce concluiu uma tarefa 🥳🎉")
+    }))
 })

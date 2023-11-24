@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/0fc7c92516.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
   <title>Document</title>
 
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
-    <h1>Formulario</h1>
+    <main>
+      <h1>Lista de tarefas</h1>
+  
+      <form>
+        <input type="text" name="num1" id="num1" placeholder="digite a tarefa">
+  
+        <button type="submit"><i class="fa-solid fa-plus"></i></button>
+      </form>
 
-    <form>
-      <input type="number" name="num1" id="num1" placeholder="digite o primeiro número">
-      <input type="number" name="num2" id="num2" placeholder="digite o segundo número">
-
-      <button type="submit">Comparar</button>
-    </form>
-
-    <div id="msgTrue" class="hidden">
-      <span>Sucess ✅</span>
-      <p>O segundo número É maior que o primeiro numero</p>
-    </div>
-
-    <div id="msgFalse" class="hidden">
-      <span>Invalid ❌</span>
-      <p>O segundo número NÃO é maior que o primeiro numero</p>
-    </div>
-
-    <div id="semValores" class="hidden">
-      <span>Fail ⛔</span>
-      <p>Nenhum número informado ou valores iguais !</p>
-    </div>
+      <p class="hidden">Comece organizar seu dia !</p>
+  
+      <ol>
+      </ol>
+    </main>
 
   <script src="./script.js"></script>
+  
 </body>
 </html>
