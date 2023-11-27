@@ -7,20 +7,14 @@ $(document).ready(function(){
   $('form').validate({
 
     rules: {
-      nome: {required: true},
-      email: {required: true, email: true},
       telefone: {required: true},
       cpf: {required: true},
-      endereco: {required: true},
       cep: {required: true},
     },
 
     messages: {
-      nome: "o campo Nome é obrigatório",
-      email: "o campo Email é obrigatório",
       telefone: "o campo Telefone é obrigatório",
       cpf: "o campo CPF é obrigatório",
-      endereco: "o campo Endereço é obrigatório",
       cep: "o campo CEP é obrigatório",
     },
 
