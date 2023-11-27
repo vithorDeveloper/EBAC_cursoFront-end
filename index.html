@@ -8,33 +8,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
   
   <script src="https://kit.fontawesome.com/0fc7c92516.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   
-  <title>Document</title>
+  <title>Formulario</title>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
   <link rel="stylesheet" href="style.css">
-
+  
 </head>
 <body>
-    <main>
-      <h1>Lista de tarefas</h1>
-  
-      <form>
-        <input type="text" name="num1" id="num1" placeholder="digite a tarefa">
-  
-        <button type="submit"><i class="fa-solid fa-plus"></i></button>
-      </form>
 
-      <p class="hidden">Comece organizar seu dia !</p>
-  
-      <ol>
-      </ol>
-    </main>
+  <main>
 
+    <h1>Formulário</h1>
+    
+    <form>
+
+      <div id="divForm">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="digite seu nome completo">
+          
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="digite seu email">
+        </div>
+
+        <div>
+          <label for="telefone">telefone</label>
+          <input type="text" name="telefone" id="telefone" placeholder="digite seu telefone">
+          
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" placeholder="digite seu CPF">
+        </div>
+      </div>
+
+      <label for="endereco">Endereço</label>
+      <input type="text" name="endereco" id="endereco" placeholder="digite seu endereço">
+      
+      <label for="cep">CEP</label>
+      <input type="text" name="cep" id="cep" placeholder="digite seu CEP">
+
+    
+      <div id="button">
+        <button type="submit">Cadastrar</i></button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <div id="carrossel">
+    <img src="./images/bg1.png" alt="imagem de fundo 1">
+    <img src="./images/bg2.png" alt="imagem de fundo 2">
+    <img src="./images/bg3.png" alt="imagem de fundo 3">
+    <img src="./images/bg4.png" alt="imagem de fundo 4">
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./plugins/jquery.mask.min.js"></script>
+  <script src="./plugins/jquery.validate.min.js"></script>
+  <script src="./plugins/messages_pt_BR.min.js"></script>
   <script src="./script.js"></script>
-  
+
 </body>
 </html>
