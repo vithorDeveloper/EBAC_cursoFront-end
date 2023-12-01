@@ -14,6 +14,9 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Rubik', sans-serif;
+  background-image: url('./img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main{
@@ -34,83 +37,10 @@ h1 {
   border-bottom: 1px solid #E6E6F0;
 }
 
-form div {
-  width: 100%;
+form input{
+  margin-bottom: 1.6rem;
 }
 
-form #divForm{
-  display: flex;
-  gap: 1.5rem;
-  border-radius: 1.5rem;
-}
-
-form input {
-  height: 2.5rem;
-  width: 100%;
-  padding-left: 0.2rem;
-  border-radius: 0.5rem;
-  border: 1px solid #E6E6F0;
-  background: #FAFAFC;
-  outline: none;
-}
-
-form label {
-  display: block;
-  margin: 1.5rem 0 .3rem 0;
-}
-
-form .lastContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-form input:focus {
-  background-color: #ecebf5;
-  outline: 1px solid gray;
-  transition: all 0.3s;
-}
-
-
-#button button {
-  width: 70%;
-  padding: .8rem 0;
-  border-radius: 0.8rem;
-  font-size: 1.3rem;
-  background: #FF5374;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  border: none;
-  cursor: pointer;
-}
-
-form #button button:hover {
-  background-color: #f284b5;
-  transition: all 0.3s;
-}
-
-form #button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 7rem;
-  background: #535971;
-  border-radius: 0 0 1rem 1rem;
-  margin-top: 2.5rem;
-}
-
-#carrossel{
-  display: flex;
-  width: 100%; 
-  height: 100vh;
-  position: absolute;
-  z-index: 0;
-}
-
-#carrossel ul{
-  list-style: none;
-}
-
-.hidden {
-  display: none;
+::placeholder{
+  color: red;
 }
