@@ -1,0 +1,1 @@
+function verificacaoDeString(r,t){let a=!0;for(let e=0;e<r.length;e++){var o=r.charAt(e).toLowerCase();for(let e=0;e<t.length;e++){if(o==t.charAt(e).toLowerCase()){a=!0;break}a=!1}if(!a)return a}return a}console.log(verificacaoDeString("abc","cba"));
