@@ -1,4 +1,4 @@
-@use "../config/variaveis";
+@import "../config/mapa";
 
 .products {
   margin-top: 40px;
@@ -15,8 +15,8 @@
 
   .product-button {
     display: block;
-    background-color: variaveis.$corButton;
-    color: variaveis.$corDeTexto;
+    background-color: #colors[corButton];
+    color: #colors[corDeTexto];
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
@@ -24,8 +24,7 @@
     text-decoration: none;
 
     &:hover {
-      background-color: #4cd137;
-      transition: all 3s;
+      background-color: #4cd167;
     }
   }
 }

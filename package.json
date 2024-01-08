@@ -1,14 +1,15 @@
 {
+  "name": "less",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
-    "sass": "sass src/style.scss build/style.css --watch"
+    "less": "lessc ./src/styles/style.less ./build/styles/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Vithor Santos",
+  "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.69.5"
+    "less": "^4.2.0"
   }
 }
