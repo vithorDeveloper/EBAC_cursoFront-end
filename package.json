@@ -1,15 +1,12 @@
 {
-  "name": "boas_praticas_css",
+  "name": "git",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/styles/style.scss build/styles.css --watch", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "vithor",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.69.7"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
