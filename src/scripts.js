@@ -28,7 +28,7 @@ $(function() {
     nomeUsuario.textContent = json.login
     repositorios.textContent = json.public_repos
     seguidores.textContent = json.followers
-    seguindo.textContent = json.folloing
+    seguindo.textContent = json.following
   })
   .catch( (error) => {
     console.error(error.message);
