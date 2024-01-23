@@ -9,16 +9,28 @@ $(function() {
   const api = "https://api.github.com/users/vithorDeveloper"
 
   fetch(api)
-  .then((response) => { return response.json() })
+  .then((response) => { 
+
+      if(!response.ok){
+        console.error("Perfil não encontrado");
+      }
+
+      return response.json()
+   })
   .then((json) => {
+
+    if(!json.avatar_url || json.name || json.login || json.public_repos || json.followers || json.following){
+       console.error("dados do usuário não encontrado!")
+    }
+
     fotoAvatar.src = json.avatar_url
     nome.textContent = json.name
     nomeUsuario.textContent = json.login
     repositorios.textContent = json.public_repos
     seguidores.textContent = json.followers
-    seguindo.textContent = json.following
+    seguindo.textContent = json.folloing
   })
-  .catch( (Error) => {
-    throw new Error("perfil não encontrado")
+  .catch( (error) => {
+    console.error(error.message);
   })
 })
