@@ -21,14 +21,13 @@ const alunos = [
   },
 ]
 
-const notaSeis = (arrayDeAlunos) => {
+const notaSeis = () => {
 
-  for (let item of arrayDeAlunos) {
-
+  alunos.filter(item => {
     if(item.nota >= 6){
       console.log(item.nome)
     }
-  }
+  })
 } 
 
-notaSeis(alunos)
+notaSeis()
