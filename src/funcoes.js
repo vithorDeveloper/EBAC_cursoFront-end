@@ -2,6 +2,6 @@
 const multiplicar = (a, b) => { return a * b; };
 console.log(multiplicar(2, 2));
 const saudação = (nome) => {
-    console.log(`Olá ${nome}`);
+    return `Olá ${nome}`;
 };
-saudação('vitor');
+console.log(saudação('vitor'));
